@@ -1,0 +1,45 @@
+{
+  "name": "Pulse Interval Stats",
+  "apiVersion": "1.0.0",
+  "author": "Coriander V. Pines",
+  "version": "0.0.1",
+  "description": "Calculate min, mean, and max interval lengths for pulses.",
+  "extensions": {
+    "Pulse Stats": {
+      "type": "DigitalMeasurement",
+      "entryPoint": "DigitalMeasurement.IntervalStatsMeasurer",
+      "metrics": {
+        "polarity": {
+          "name": "Interval Polarity",
+          "notation": "I<sub>pol</sub>",
+          "units": ""
+        },
+        "count": {
+          "name": "Interval Count",
+          "notation": "I<sub>count</sub>",
+          "units":""
+        },
+        "min": {
+          "name": "Minimum Interval Length",
+          "notation": "I<sub>min</sub>",
+          "units": "s"
+        },
+        "mean": {
+          "name": "Mean Interval Length",
+          "notation": "I<sub>mean</sub>",
+          "units": "s"
+        },
+        "max": {
+          "name": "Maximum Interval Length",
+          "notation": "I<sub>max</sub>",
+          "units": "s"
+        },
+        "stddev": {
+          "name": "Interval Length Standard Deviation",
+          "notation": "I<sub>stddev</sub>",
+          "units": "s"
+        }
+      }
+    }
+  }
+}
